@@ -1,4 +1,4 @@
-### Getting Started with PWK
+### Getting Started with PWK 🚀
 In certain cases you are given: a question, a machine, and a flag. Once you have successfully completed the objective, you will receive a flag in the form `OS{random-hash}`. Since flags are dynamically generated at machine boot *be sure to submit the flag before shutting down the instance.*
 
 On Module Exercise VMs that require an SSH connection, they suggest issuing the SSH command as follows:
@@ -16,7 +16,7 @@ Setting up our Kali Box will require the following:
 	- Download the `universal.ovpn` from the Learning Portal
 		- Run the following `sudo openvpn /Downloads/universal.ovpn`
 			- *Ensure no other VPN is running* (I had to turn my host VPN off) 🙃
-### How to Approach the Course
+### How to Approach the Course 🎯
 Penetration testing and information security in general is fundamentally about *reasoning under uncertainty*. You must widen your scope to look at posture from every angle. 🦐
 
 > - Enumerate 
@@ -43,12 +43,12 @@ Penetration testing and information security in general is fundamentally about *
 > - Nothing Replaces Practice
 > - Get the 10% Bonus Points
 > - Stay Calm Don't Lose Hope
-> - **Don't Give Up** 🚀
+> - **Don't Give Up** 💪
 
-### PWK Modules
+### PWK Modules 📜
 #### Enumeration 🛰️
 One of the most important aspects of penetration testing: information gathering (often called by its synonym *enumeration*). This module is specifically about how to approach a network and detect some common signatures.
-#### Web App & Client Side Attacks
+#### Web App & Client Side Attacks 🕸️
 There are two primary reasons for starting here:
 1. Web vulnerabilities are among the most common attack vectors available to us, since modern web apps usually allow users to submit data to them.
 2. Web applications are inherently visual and therefore provide us with a nice interface for understanding why our attacks work in the way that they do.
@@ -62,15 +62,24 @@ We continue into other attack methods such as:
 - *File Inclusion* - shows us what can happen when certain configs are not setup properly
 - *File Upload Vulns* - demonstrate how we can take advantage of the ability to upload our on files to a web server
 - *Command Injection* - allows us to run code of our choice on the web server itself
-#### Perimeter Attacks
+#### Perimeter Attacks 🧱
 Being able to *locate public exploits* and *fixing exploits* will help us adapt these tools to our needs. *Antivirus Evasion* isn't itself a perimeter attack, but having some knowledge of how to avoid AV will be helpful since most modern day enterprises do deploy AV solutions. Finally to complete the review of perimeter attacks we will look at analysis of cryptography and *Password Attacks*. Weak or predictable passwords are extremely common in most orgs.
-#### Privilege Escalation Attacks
+#### Privilege Escalation Attacks 🪜
 Once access is gained to a machine, we suddenly have a whole set of new actions and activities open to us. We may want to *increase our privileges* on the machine so that we can fully control it, or we might want to use it to gain access to other machines on the network.
 
 *Windows Privilege Escalation* demonstrates how after compromising a Windows target, we can use our new legitimate permissions to become an administrator. We  will learn how to gather information, exploit various types of services, and attack different Windows components.
 
-*Linux Privilege Escalation*
-#### Active Directory
+*Linux Privilege Escalation* goes through the same process with Linux targets and obtaining `root/sudo` level permissions. 
 
+Escalating permissions is instrumentally important on an engagement because doing so gives us more access. Sometimes it can be even more effective to gain access to another machine owned by the organization. When we move from one machine to another on the same network it is called *pivoting*, and when we move into another subnetwork we call this *tunneling*. 
 
-#### Challenge Lab Preparation
+*Port Redirection and SSH Tunneling* covers the basics of these persistence skills, while *Tunneling through deep packet inspection* showcases a particular technique that can be used to evade common network-layer defenses.
+
+Lastly we will go over the *Metasploit Framework (MSF)*, MSF is a powerful set of tools that help automate many enumeration and exploitation steps we've learned so far.
+#### Active Directory 👥
+*Active Directory* is one of the most complex and important technologies for us to learn as penetration testers, because it is ubiquitous in today's enterprise environment. PWK has three modules dedicated to this area:
+ - *Active Directory Introduction and Enumeration*
+ - *Active Directory Authentication Attacks*
+ - *Active Directory Lateral Movement*
+#### Challenge Lab Preparation 🧪
+The final two PWK modules represent a bridge between the text, video, and exercise based learning modalities and the Challenge labs themselves. By this point the learner will have completed over 300 exercises, including the compromise of approximately 25 machines. 
