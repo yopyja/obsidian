@@ -30,11 +30,11 @@ Some basic attack methods that happen over networks:
  - `ARP` - Address Resolution Protocol (ARP) resolves IPv4 addresses. MACs are also called physical addresses or hardware addresses.
 
 
-| Range           | Type                    |
-| --------------- | ----------------------- |
-| `0`-`1023`      | Well-known Ports        |
-| `1024`-`49151`  | Registered Ports        |
-| `49152`-`65535` | Dynamic of Private Ports| 
+| Range           | Type                     |     |
+| --------------- | ------------------------ | --- |
+| `0`-`1023`      | Well-known Ports         |     |
+| `1024`-`49151`  | Registered Ports         |     |
+| `49152`-`65535` | Dynamic of Private Ports |     |
 
 A few `Well known ports`:
 

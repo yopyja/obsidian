@@ -1,5 +1,5 @@
-# pj
-## 01 [Cybersecurity Intro](01cyber.md) 🏦
+# OffSec
+## 01 [Cybersecurity Intro](01cybersec.md) 🏦
 ### The Practice of Cyber Security
 
 ### Threats and Threat Actors
@@ -196,7 +196,7 @@
 
 ## 25 [Rework Zero to Hero](25sudo.md) 🤖
 
-
+*I want to reorg how to learn this topic for someone like myself.*
 
 ## 26 [Terminal 101](26term.md) 📜
 ### Commands

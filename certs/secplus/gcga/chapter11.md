@@ -99,7 +99,7 @@ Lawsuits, monetary loss
 
 #### Stakeholder Management
 Communication with them is important
-dont give too much away but give them what they want.
+don't give too much away but give them what they want.
 
 ---
 
