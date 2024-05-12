@@ -27,13 +27,13 @@
 ---
 # extras
 
-| ##  | Topic                                        |
-| --- | -------------------------------------------- |
-| 22  | [Kali Intro](22kali.md) 🐉                   |
-| 23  | [Learning Strategies](23edustrat.md) 🎓      |
-| 24  | [Trying Harder Challenge Labs](24labs.md) 🧪 |
-| 25  | [Rework Zero to Hero](25sudo.md) 🤖          |
-| 26  | [Terminal 101](26term.md) 📜                 |
+| ##  | Topic                                               |
+| --- | --------------------------------------------------- |
+| 22  | [Kali Intro](offsec/22kali.md) 🐉                   |
+| 23  | [Learning Strategies](offsec/23edustrat.md) 🎓      |
+| 24  | [Trying Harder Challenge Labs](offsec/24labs.md) 🧪 |
+| 25  | [Rework Zero to Hero](offsec/25sudo.md) 🤖          |
+| 26  | [Terminal 101](offsec/26term.md) 📜                 |
 
 ---
 
