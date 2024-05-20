@@ -135,12 +135,47 @@ https://lolbas-project.github.io
 
 It is essential to understand the implications of port scanning, as well as the impact that specific port scans can have. Due to the amount of traffic some scans can generate, along with their intrusive nature, running port scans blindly can have adverse effects on target systems or the client network such as overloading servers and network links or triggering an [_IDS/IPS_](https://www.barracuda.com/support/glossary/intrusion-detection-system). Running the wrong scan could result in downtime for the customer.
 
-```
-# TCP
+The `nc` command, short for netcat, is a versatile networking utility for reading from and writing to network connections using TCP or UDP.
+
+### Command Summary:
+```bash
 nc -nvv -w 1 -z 192.168.50.152 3388-339
-# UDP
+```
+
+This command will perform a verbose port scan on the IP address `192.168.50.152`, checking ports from `3388` to `339` inclusively, with a timeout of `1` second for each port.
+
+##### Flags Used:
+- `-n` : This flag suppresses DNS resolution, meaning IP addresses will be displayed rather than domain names.
+- `-vv` : This flag increases the verbosity level of the output. In this case, it sets it to a very high level, providing detailed information about the connection attempt.
+- `-w 1` : This flag sets a timeout for the connection attempt. In this case, it sets the timeout to 1 second. If the connection is not established within this time, the attempt will be abandoned.
+- `-z` : This flag performs a port scanning operation instead of initiating a connection. It checks whether a connection can be established to the specified target (IP address or hostname) on the specified port(s) without actually sending any data.
+- `192.168.50.152` : This is the target IP address to which the connection attempt or port scanning operation is directed.
+- `3388-339` : This specifies a range of ports to scan. In this case, it will scan ports from 3388 to 339 on the target IP address.
+
+---
+
+```bash
 nc -nv -u -z -w 1 192.168.50.149 120-123
 ```
+
+This command will perform a verbose UDP port scan on the IP address `192.168.50.149`, checking ports from `120` to `123` inclusively, with a timeout of `1` second for each port.
+
+##### Flags Used:
+- `-n` : This flag suppresses DNS resolution, displaying IP addresses instead of domain names.
+- `-nv` : These flags increase the verbosity level of the output, providing more detailed information about the connection attempt.
+- `-u` : This flag specifies the use of UDP (User Datagram Protocol) instead of the default TCP (Transmission Control Protocol). UDP is a connectionless protocol.
+- `-z` : This flag instructs `nc` to perform port scanning without initiating any data transmission.
+- `-w 1` : This flag sets a timeout for the connection attempt. In this case, it sets the timeout to 1 second. If the connection is not established within this time, the attempt will be abandoned.
+- `192.168.50.149` : This is the target IP address for the connection attempt or port scanning operation.
+- `120-123` : This specifies a range of ports to scan. In this case, it will scan ports from 120 to 123 on the target IP address.
+
+[_Nmap_](http://nmap.org/) (written by Gordon Lyon, aka Fyodor) is one of the most popular, versatile, and robust port scanners available. It has been actively developed for over two decades and offers numerous features beyond port scanning.
+
+
+
+
+
+
 
 ---
 
